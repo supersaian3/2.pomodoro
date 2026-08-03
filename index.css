@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf3ee;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.app {
+  position: relative;
+  width: 360px;
+  max-width: 90vw;
+  padding: 48px 32px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.settings-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.settings-btn:hover {
+  background-color: #e6e6e6;
+}
+
+h1 {
+  color: #e2543a;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+.timer-display {
+  font-size: 72px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 40px;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-start {
+  background-color: #e2543a;
+  color: #ffffff;
+}
+
+.btn-stop {
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+.btn-reset {
+  background-color: #f4f4f4;
+  color: #333333;
+}
