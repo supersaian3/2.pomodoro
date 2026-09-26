@@ -7,6 +7,7 @@ const timerDisplay = document.getElementById("timer-display");
 const startBtn = document.getElementById("start-btn");
 const stopBtn = document.getElementById("stop-btn");
 const resetBtn = document.getElementById("reset-btn");
+const clock = document.getElementById("clock");
 
 function getSavedMinutes() {
   const saved = Number(localStorage.getItem(STORAGE_KEY));
@@ -50,8 +51,19 @@ function resetTimer() {
   updateDisplay();
 }
 
+function updateClock() {
+  clock.textContent = new Date().toLocaleTimeString("ko-KR", {
+    hour12: false,
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+}
+
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
 resetBtn.addEventListener("click", resetTimer);
 
 updateDisplay();
+updateClock();
+setInterval(updateClock, 1000);

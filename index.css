@@ -51,7 +51,16 @@ h1 {
   color: #e2543a;
   font-size: 28px;
   letter-spacing: 1px;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
+}
+
+.clock {
+  font-size: 16px;
+  font-weight: 600;
+  color: #9b8c86;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  font-variant-numeric: tabular-nums;
 }
 
 .timer-display {
